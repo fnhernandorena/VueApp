@@ -5,17 +5,10 @@
     </h1>
 
     <div class="flex max-w-xs mx-auto mb-6">
-      <input
-        type="text"
-        placeholder="Enter city name"
-        class="border border-gray-400 rounded-l-lg px-4 py-2 w-full"
-        v-model="city"
-        @keydown.enter="handleKeydown"
-      />
-      <button
-        class="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-r-lg"
-        @click="searchWeather"
-      >
+      <input type="text" placeholder="Enter city name" class="border border-gray-400 rounded-l-lg px-4 py-2 w-full"
+        v-model="city" @keydown.enter="handleKeydown" />
+      <button class="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-r-lg"
+        @click="searchWeather">
         Search
       </button>
     </div>
@@ -229,7 +222,7 @@ export default defineComponent({
 </svg>
   `;
 
-  const mediumScreenSvg = `
+    const mediumScreenSvg = `
     <svg
   role="img"
   width="576"
@@ -302,7 +295,7 @@ export default defineComponent({
 </svg>
   `;
 
-  const largeScreenSvg = `
+    const largeScreenSvg = `
     <svg
   role="img"
   width="672"
@@ -374,7 +367,7 @@ export default defineComponent({
   </defs>
 </svg>
   `;
-  const extraLargeScreenSvg = `
+    const extraLargeScreenSvg = `
     <svg
   role="img"
   width="896"

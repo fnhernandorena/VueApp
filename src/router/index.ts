@@ -15,6 +15,10 @@ const router = createRouter({
             path: '/weather',
             name: 'weather',
             component: () => import('../weather/Weather.vue')
+        },{
+            path: '/:pathMatch(.*)*',
+            name: 'NotFound',
+            component: () => import('../notFound/NotFound.vue')
         }
     ]
 })
